@@ -1,4 +1,3 @@
-*.node
 *.o
 .lock-wscript
 .project
