@@ -18,9 +18,13 @@
   "license": "ISC",
   "readmeFilename": "README.md",
   "dependencies": {
-    "nan": "^2.3.5"
+    "nan": "^2.3.5",
+    "bindings": "sencha/node-bindings#find-by-abi"
   },
   "scripts": {
+    "build": "node-gyp rebuild",
+    "electron": "node-gyp rebuild --runtime=electron --target=1.4.4 --disturl=https://atom.io/download/atom-shell --build-from-source",
+    "install": "echo",
     "test": "node test/run-tests.js"
   }
 }
