@@ -1,7 +1,7 @@
 {
   "name": "iconv",
   "main": "./lib/iconv",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "Text recoding in JavaScript for fun and profit!",
   "homepage": "https://github.com/bnoordhuis/node-iconv",
   "repository": {
@@ -21,13 +21,10 @@
     "nan": "^2.3.5",
     "bindings": "sencha/node-bindings#find-by-abi"
   },
-  "devDependencies": {
-    "tap": "~0.4.8"
-  },
   "scripts": {
     "build": "node-gyp rebuild",
     "electron": "node-gyp rebuild --runtime=electron --target=1.4.4 --disturl=https://atom.io/download/atom-shell --build-from-source",
     "install": "echo",
-    "test": "tap test/test-*.js"
+    "test": "node test/run-tests.js"
   }
 }
